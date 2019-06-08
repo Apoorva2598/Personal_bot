@@ -1,6 +1,5 @@
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credit_key.json"
-#AIzaSyAjLYYmHj2z5ddcs8Q2zmnc0n3OmtvJK-s
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
 PROJECT_ID = "personalbot-rsropn"
@@ -27,7 +26,7 @@ def get_news(parameters):
 
 ##      AUDIO           - begin
 from youtube_api import YouTubeDataAPI
-api_key = 'AIzaSyAjLYYmHj2z5ddcs8Q2zmnc0n3OmtvJK-s'
+api_key = '<your youtube api key here>'
 yt = YouTubeDataAPI(api_key)
 
 def get_video(message):
